@@ -1,0 +1,157 @@
+/* Contenedor principal */
+.admin-products-container {
+    padding: 20px 5%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Título */
+.admin-products-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--light);
+}
+
+.product-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botones del formulario */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+
+.add-product-btn, .edit-product-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-product-btn {
+    background-color: var(--primary);
+    color: var(--body);
+}
+
+.add-product-btn:hover {
+    background-color: #2980b9;
+}
+
+.edit-product-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.edit-product-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Lista de productos */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    background-color: var(--light);
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.product-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product-card .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Mensajes */
+.loading-message, .error-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+}
+
+.error-message {
+    color: #e74c3c;
+}

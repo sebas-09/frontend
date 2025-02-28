@@ -1,0 +1,167 @@
+/* Contenedor principal */
+.admin-categories-container {
+  padding: 80px 5% 20px; /* Asegura que haya espacio suficiente debajo del header */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Botón Crear Categoría */
+.create-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Lista de categorías */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Tarjeta de categoría */
+.category-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--light);
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  background-color: var(--primary-light);
+  transform: scale(1.05);
+}
+
+.edit-btn {
+  background-color: var(--secondary);
+}
+
+.edit-btn:hover {
+  background-color: var(--secondary-dark);
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Modal */
+/* Modal Overlay (Fondo oscuro) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Título del modal */
+.modal h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Inputs */
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Contenedor de botones */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Espacio uniforme entre botones */
+  margin-top: 20px;
+}
+
+/* Estilo base para ambos botones */
+.modal-actions button {
+  flex: 1; /* Ambos botones ocupan el mismo espacio */
+  height: 45px; /* Misma altura */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Asegura que ambos tengan la misma anchura */
+}
+
+/* Botón Guardar (Crear / Actualizar) */
+.save-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Botón Cerrar */
+.close-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.close-btn:hover {
+  background-color: #c0392b;
+}
